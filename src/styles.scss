@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* Global */
+body{
+    font-family: Tahoma,Arial,Helvetica,sans-serif;
+}
+html {
+    border-top: solid 3px #4091d2;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+a, a:hover{
+    color: #4091d2;
+    text-decoration: none;
+}
+
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+input:focus{
+    box-shadow: none !important;
+    border-color: #ddd  !important
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #205e7b;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #edeeef;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  

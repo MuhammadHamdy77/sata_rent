@@ -1,0 +1,429 @@
+.form-search{
+    direction: rtl;
+}
+.form-search form{
+    background-color: #f0f0f0;
+    padding: 15px;
+}
+.select-city {
+    position: relative;
+}
+.dropdown-content{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    direction: ltr;
+}
+
+.dropdown-content svg{
+    color: #999;
+}
+.dropdown-content span{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.select-city .show-search-city{
+    background-color: #fff;
+    position: absolute;
+    top: 50px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 6px;
+    display: none;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    direction: ltr;
+    z-index: 1;
+}
+    .select-city .show-search-city .top-search-city{
+        height: 20%;
+    }
+.select-city .show-search-city.open{
+display: block;
+}
+.select-city .show-search-city .search-inp {
+    padding: 10px;
+}
+.select-city .show-search-city .search-inp svg{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #a1a0a0;
+}
+.select-city .show-search-city .search-inp .form-control{
+    direction: rtl;
+    padding-right: 40px;
+}
+
+.select-city .show-search-city .map-go{
+    padding: 0;
+    margin: 5px 0;
+    width: 100%;
+}
+
+
+.select-city .show-search-city .map-go li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+.select-city .show-search-city .list-citeis{
+    padding: 0;
+    margin: 5px 0;
+}
+.select-city .show-search-city .list-citeis li{
+    position: relative;
+}
+.select-city .show-search-city .list-citeis > li  a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+    // position: relative;
+    color: #000;
+}
+// .select-city .show-search-city .list-citeis li a{
+    
+// }
+.select-city .show-search-city .list-citeis > li:hover{
+    background: #e6f5ff;
+}
+.select-city .show-search-city .list-citeis > li:hover > a {
+    color: #2c97ec !important;
+    font-weight: 700;
+}
+
+.select-city .show-search-city .list-citeis .sub-cities{
+    position: absolute;
+    top: 0;
+    right: 101%;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    max-height: 400px;
+    display: none;
+    width: 100%;
+}
+.select-city .show-search-city .list-citeis > li:hover .sub-cities{
+    display: block;
+}
+.select-city .show-search-city .list-citeis .sub-cities li{
+    flex-direction: row-reverse;
+    gap: 15px;
+}
+.select-city .show-search-city .list-citeis .sub-cities li label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    height: 100%;
+    cursor: pointer;
+    border-top: 1px solid #ddd;
+    padding: 0 10px;
+}
+.select-city .show-search-city .list-citeis .sub-cities li a{
+    border: 0;
+    justify-content: end;
+}
+.select-city .show-search-city .list-citeis .sub-cities li input[type=checkbox]{
+    width: 20px;
+    height: 20px;
+}
+.car-list-rent{
+    position: relative;
+}
+.car-list-rent .dropdown-content span{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.car-list-rent .car-list-menu{
+    width: 80%;
+    background-color: #fff;
+    right: 0;
+    position: absolute;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    top: 50px;
+    border-radius: 5px;
+    display: none;
+    direction: ltr;
+    z-index: 1;
+}
+.car-list-rent .car-list-menu.open{
+    display: block;
+}
+.car-list-rent .car-list-menu .list-parent li {
+    position: relative;
+}
+.car-list-rent .car-list-menu .list-parent li > a{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+}
+.car-list-rent .car-list-menu .list-parent li:first-of-type a{
+    justify-content: flex-end;
+}
+.car-list-rent .car-list-menu .list-parent li a svg{
+    color: rgb(187, 187, 187);
+}
+.car-list-rent .car-list-menu .list-parent li:hover{
+    background-color: #d1e7f959;
+}
+.car-list-rent .car-list-menu .list-parent li:hover a{
+    color: #1d87dd;
+}
+
+.car-list-rent .car-list-menu .list-parent li:hover a svg{
+    color: rgb(187, 187, 187);
+}
+.car-list-rent .car-list-menu .list-parent li a span svg{
+    font-size: 18px;
+    margin: 0 0 0 5px;
+}
+
+.car-list-rent .car-list-menu .list-parent li .sub-menu-cars{
+    position: absolute;
+    width: 150%;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    right: 101%;
+    top: 0;
+    padding: 10px 5px;
+    display: none;
+}
+.car-list-rent .car-list-menu .list-parent li:hover .sub-menu-cars{
+    display: block;
+}
+.car-list-rent .car-list-menu .list-parent li .sub-menu-cars span{
+    width: 100%;
+    text-align: right;
+    display: block;
+    position: relative;
+    right: 5px;
+    font-size:12px;
+    font-weight: 600;
+    padding: 5px;
+}
+.car-list-rent .car-list-menu .list-parent li .sub-menu-cars span:hover{
+    background-color: #c9e9ff7d;
+}
+.car-list-rent .car-list-menu .list-parent li .sub-menu-cars .depart-car{
+    display: flex;
+    gap: 1px;
+}
+
+.car-list-rent .car-list-menu .list-parent li .sub-menu-cars .depart-car ul{
+    width: 50%;
+}
+.car-list-rent .car-list-menu .list-parent li .sub-menu-cars .depart-car ul li{
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+    font-size: 12px;
+}
+.car-list-rent .car-list-menu .list-parent li .sub-menu-cars .depart-car ul li a{
+    display: block;
+    padding: 8px;
+    border: 0;
+    color: #000;
+}
+
+.search-inp input{
+    background-color: #fff;
+    height: 42px;
+    direction: rtl;
+    width: 90%;
+}
+.search-inp input::placeholder{
+    font-size: 11px;
+}
+
+.select-details-car{
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+.select-details-car .item{
+    width: calc(100% / 5);
+    padding: 10px;
+    position: relative;
+    flex-wrap: wrap;
+}
+.select-details-car .item .box{
+    height: 100%;
+    position: relative;
+}
+.select-details-car .item .box > label{
+    margin: 0 0 5px;
+}
+.select-details-car .item .box svg{
+    position: absolute;
+    left: 10px;
+    top: 40px;
+    color: #847474;
+}
+.select-details-car .item .box .form-control,
+.select-details-car .item .box .form-control:focus{
+    border-color: #ddd;
+    height: 40px;
+}
+.select-details-car .item .search-type-car{
+    position: absolute;
+    top: 74px;
+    right: 10px;
+    width: 90%;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    display: none;
+}
+.select-details-car .item .search-type-car.open{
+    display: block;
+}
+.select-details-car .item .search-type-car .select-all-cars{
+    border-bottom: 1px solid #ddd;
+}
+
+.select-details-car .item .search-type-car .all-cars ul li,
+.select-details-car .item .search-type-car .select-all-cars li{
+    padding: 10px;
+}
+.select-details-car .item .search-type-car .select-all-cars li{
+    border-bottom: 1px solid #ddd;
+}
+.select-details-car .item .search-type-car .all-cars ul li label,
+.select-details-car .item .search-type-car .select-all-cars li label{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+
+.select-details-car .item .search-type-car .all-cars ul li {
+    display: flex;
+    justify-content: space-between;
+    // flex-direction: row-reverse;
+    cursor: pointer;
+}
+.select-details-car .item .search-type-car .all-cars ul li label{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+    width: 100%
+}
+.select-details-car .item .search-type-car .all-cars ul li label .check-car{
+    display: flex;
+    gap: 5px
+}
+.select-details-car .item .search-type-car ul li span{
+    font-size: 14px;
+    font-weight: 500;
+}
+.select-details-car .item .box .price-car{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.select-details-car .item .box .price-car input{
+    width: 80px;
+    height: 40px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+}
+.select-details-car .item .box .price-car input:focus{
+    border: 1px solid rgb(211, 211, 211);
+}
+.select-details-car .item .box .date-rent-inp{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.select-details-car .item .box .date-rent-inp input{
+    width: 80px;
+    height: 40px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+}
+.select-details-car .item .box .rent-date-year{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    width: 85%;
+    top: 70px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    border-radius: 5px;
+    display: none;
+}
+.select-details-car .item .box .rent-date-year.open{
+    display: flex;
+}
+.select-details-car .item .box .rent-date-year .from-date,
+.select-details-car .item .box .rent-date-year .to-date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+}
+.select-details-car .item .box .rent-date-year .from-date select,
+.select-details-car .item .box .rent-date-year .to-date  select{
+    border: 0;
+    cursor: pointer;
+}
+.select-details-car .item .box .rent-date-year select:focus{
+    border-color: #ddd;
+    box-shadow: none;
+}
+.select-details-car .item .box .rent-date-year label{
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 4px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.form-search .actions-form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 10px 25px 0 50px;
+}
+.form-search .actions-form .search-submit{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row-reverse;
+}
+
+.form-search .actions-form .search-submit .btn{
+    width: 200px;
+    border-radius: 2px;
+}

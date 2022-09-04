@@ -1,0 +1,92 @@
+
+/* Start Header */
+section.header {
+    padding: 15px 0;
+}
+.lt-top-header .settings{
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 15px;
+}
+
+.lt-top-header .settings a {
+    color: #999;
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    position: relative;
+    gap: 5px;
+}
+.lt-top-header .settings a svg {
+    font-size: 22px;
+}
+.lt-top-header .settings a:after{
+    content: '';
+    position: absolute;
+    left: -7px;
+    width: 1px;
+    height: 70%;
+    background-color: #d8d8d8;
+    top: 0;
+}
+.lt-top-header .settings > a span{
+    font-size: 14px ;
+}
+.lt-top-header .settings a:last-of-type:after{
+    display: none;
+}
+.lt-top-header .settings .addAds{
+    background-color: #f39c12;
+    height: 45px;
+    width: 195px;
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: revert;
+    color: #fff;
+    font-weight: 800;
+    justify-content: space-around;
+    border-radius: 4px;
+}
+.lt-top-header .settings .addAds{
+    font-size: 14px !important;
+}
+.lt-top-header .settings .addAds svg{
+    font-size: 18px;
+}
+.lt-top-header .settings .addAds span{
+    position: relative
+}
+.lt-top-header .settings .addAds span::after{
+    content: '';
+    position: absolute;
+    right: -15px;
+    top: -10px;
+    width: 1px;
+    background-color: #989898;
+    height: 170%;
+}
+.rt-top-header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+.rt-top-header .lang{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    gap: 10px;
+    position: relative;
+}
+
+.rt-top-header .lang a{
+    font-size: 12px;
+    text-decoration: none;
+    position: relative;
+    right: 0;
+    top: 4px;
+}
+

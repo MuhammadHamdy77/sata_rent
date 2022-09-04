@@ -1,0 +1,476 @@
+<section class="form-search">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="POST">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <div class="select-city">
+                                <div id="" class="dropdown-content" (click)="openSearch()">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                        <span>
+                                            <input type="hidden" name="hoodId">
+                                            <input type="hidden" name="cityId">
+                                            إختر المدينة و الحي
+                                        </span>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="show-search-city" [class.open] = "isOpenSearch">
+                                    <div class="top-search-city">
+                                        <div class="search-inp">
+                                            <input type="text" placeholder="ابحث عن مدينة او حي" class="form-control" />
+                                            <i class="fa-solid fa-search"></i>
+                                        </div>
+                                        <ul class="map-go">
+                                            <li>
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                                <a href="#" class="">بالقرب من موقعي</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <ul class="list-citeis">
+                                        <li>
+                                            <a href="#" class="">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                                 القاهرة 
+                                                </a>
+                                            <ul class="sub-cities">
+                                                <li>
+                                                    <label for="cairo1">
+                                                        <input type="checkbox" id="cairo1" />
+                                                        <a>التجمع الاول</a>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="cairo2">
+                                                        <input type="checkbox" id="cairo2" />
+                                                        <a>التجمع الاول</a>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="cairo3">
+                                                        <input type="checkbox" id="cairo3" />
+                                                        <a>التجمع الاول</a>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                                 القاهرة 
+                                                </a>
+                                            <ul class="sub-cities">
+                                                <li>
+                                                    <label for="cairo1">
+                                                        <input type="checkbox" id="cairo1" />
+                                                        <a>التجمع الاول</a>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="cairo2">
+                                                        <input type="checkbox" id="cairo2" />
+                                                        <a>التجمع الاول</a>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="cairo3">
+                                                        <input type="checkbox" id="cairo3" />
+                                                        <a>التجمع الاول</a>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                                 القاهرة 
+                                                </a>
+                                            <ul class="sub-cities">
+                                                <li>
+                                                    <label for="cairo1">
+                                                        <input type="checkbox" id="cairo1" />
+                                                        <a>التجمع الاول</a>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="cairo2">
+                                                        <input type="checkbox" id="cairo2" />
+                                                        <a>التجمع الاول</a>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="cairo3">
+                                                        <input type="checkbox" id="cairo3" />
+                                                        <a>التجمع الاول</a>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                                 القاهرة 
+                                                </a>
+                                            <ul class="sub-cities">
+                                                <li>
+                                                    <label for="cairo1">
+                                                        <input type="checkbox" id="cairo1" />
+                                                        <a>التجمع الاول</a>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="cairo2">
+                                                        <input type="checkbox" id="cairo2" />
+                                                        <a>التجمع الاول</a>
+                                                    </label>
+                                                </li>
+                                                <li>
+                                                    <label for="cairo3">
+                                                        <input type="checkbox" id="cairo3" />
+                                                        <a>التجمع الاول</a>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="car-list-rent">
+                                <div id="" class="dropdown-content" (click)="openCarList()">
+                                    <span class="">
+                                        <span>
+                                            <input type="hidden" name="hoodId">
+                                            <input type="hidden" name="cityId">
+                                           سيارات للايجار
+                                        </span>
+                                        <i class="fa-solid fa-table-cells-large"></i>
+                                    </span>
+                                </div>
+                                <div class="car-list-menu"  [class.open] = "isOpenCarList">
+                                    <ul class="list-parent">
+                                        <li>
+                                            <a>
+                                                <span>
+                                                    جميع الاقسام
+                                                    <i class="fa-solid fa-table-cells-large"></i>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                                <span>
+                                                    سيارات ومركبات
+                                                    <i class="fa-solid fa-car text-danger"></i>
+                                                </span>
+                                            </a>
+
+                                            <div class="sub-menu-cars">
+                                                <span>سيارات ومركبات</span>
+                                                <div class="depart-car">
+                                                    <ul>
+                                                        <li><a href="">سيارات للبيع</a></li>
+                                                        <li><a href="">سيارات للايجار</a></li>
+                                                        <li><a href="">سيارات للبيع</a></li>
+                                                        <li><a href="">سيارات للايجار</a></li>
+                                                        <li><a href="">سيارات للايجار</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a>اكسسوارات</a></li>
+                                                        <li><a>جنوط</a></li>
+                                                        <li><a>اطارات</a></li>
+                                                        <li><a>اليات ثقيله</a></li>
+                                                        <li><a>اطارات</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a>
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                                <span>
+                                                    دراجات نارية
+                                                    <i class="fa-solid fa-motorcycle text-danger"></i>
+                                                </span>
+                                            </a>
+                                            <div class="sub-menu-cars">
+                                                <span>دراجات نارية</span>
+                                                <div class="depart-car">
+                                                    <ul>
+                                                        <li><a href="">دراجات للبيع</a></li>
+                                                        <li><a href="">دراجات للايجار</a></li>
+                                                        <li><a href="">دراجات للبيع</a></li>
+                                                        <li><a href="">دراجات للايجار</a></li>
+                                                        <li><a href="">دراجات للايجار</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a>اكسسوارات</a></li>
+                                                        <li><a>جنوط</a></li>
+                                                        <li><a>اطارات</a></li>
+                                                        <li><a>اليات ثقيله</a></li>
+                                                        <li><a>اطارات</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="search-inp">
+                                <input type="search" name="" class="form-control" placeholder="ابحث في سوق مصر المفتوح" id="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="select-details-car">
+                            <div class="item">
+                                <div class="box">
+                                    <label for="">النوع</label>
+                                    <input type="search" (click)="openTypeCar()" class="form-control" placeholder="ادخل النوع"/>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <div class="search-type-car" [class.open] = "isTypeOpen">
+                                    <ul class="select-all-cars">
+                                        <li>
+                                            <label for="select_all">
+                                                <input type="checkbox" id="select_all"/> اختر الكل
+                                            </label>
+                                        </li>
+                                    </ul>
+                                    <div class="all-cars">
+                                        <ul>
+                                            <li>
+                                                <label for="audi_car">
+                                                    <div class="check-car">
+                                                        <input class="checkbox" id="audi_car" type="checkbox" name="check[]"> 
+                                                        <span>اودي</span>
+                                                    </div>
+                                                    <div class="logo-car">
+                                                        <img src="../assets/img/eg.svg" alt="">
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="lada_car">
+                                                    <div class="check-car">
+                                                        <input class="checkbox" type="checkbox" id="lada_car" name="check[]"> 
+                                                        <span>لادا</span>
+                                                    </div>
+                                                    <div class="logo-car">
+                                                        <img src="../assets/img/eg.svg" alt="">
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="toyota_car">
+                                                    <div class="check-car">
+                                                        <input class="checkbox" id="toyota_car" type="checkbox" name="check[]"> 
+                                                        <span>تويوتا</span>
+                                                    </div>
+                                                    <div class="logo-car">
+                                                        <img src="../assets/img/eg.svg" alt="">
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="bmw_car">
+                                                    <div class="check-car">
+                                                         <input class="checkbox" type="checkbox" id="bmw_car" name="check[]"> 
+                                                         <span>بي ام</span>
+                                                    </div>
+                                                   <div class="logo-car">
+                                                    <img src="../assets/img/eg.svg" alt="">
+                                                   </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <label for="">الفئة</label>
+                                    <input type="search" (click)="openTypeNo()" class="form-control" placeholder="ادخل النوع"/>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <div class="search-type-car" [class.open] = "isTypeNoOpen">
+                                    <ul class="select-all-cars">
+                                        <li>
+                                            <label for="select_all">
+                                                <input type="checkbox" id="select_all"/> اختر الكل
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="select_all">
+                                                <input type="checkbox" id="select_all"/> استرا
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="select_all">
+                                                <input type="checkbox" id="select_all"/>اجيلا
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label for="select_all">
+                                                <input type="checkbox" id="select_all"/>  Gt
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <label for="">سنة الصنع</label>
+                                    <div class="date-rent-inp">
+                                        <input type="text" (click)="dateRentOpen()" class="form-control" placeholder="2022" value="{{dateForm}}"  readonly="true">
+                                        <input type="text" (click)="dateRentOpen()" class="form-control" placeholder="2023" value="{{dateTo}}"   readonly="true">
+                                    </div>
+                                    <div class="rent-date-year" [class.open]="dateRental">
+                                        <div class="from-date">
+                                            <label for="">من</label> 
+                                            <select name="" id="" class="form-control" (change)="dateRentTo($event.target)" >
+                                                <option *ngFor="let date of dateRent"  [ngValue]="date" >{{date}}</option>
+                                            </select>
+                                        </div>
+                                        <div class="to-date">
+                                            <label for="">إلى</label>
+                                            <select name="" id="" class="form-control" (change)="dateRentFrom($event.target)"> 
+                                                <option *ngFor="let date of dateRent"  [ngValue]="date" >{{date}}</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <label for="">نوع الهيكل</label>
+                                                              
+                                    <input type="search" (click)="openCatCar()" class="form-control" placeholder="ادخل النوع"/>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </div>
+                                <div class="search-type-car" [class.open] = "isCatOpen">
+                                    <ul class="select-all-cars">
+                                        <li>
+                                            <label for="select_all">
+                                                <input type="checkbox" id="select_all"/> اختر الكل
+                                            </label>
+                                        </li>
+                                    </ul>
+                                    <div class="all-cars">
+                                        <ul>
+                                            <li>
+                                                <label for="audi_car">
+                                                    <div class="check-car">
+                                                        <input class="checkbox" id="audi_car" type="checkbox" name="check[]"> 
+                                                        <span>صالون</span>
+                                                    </div>
+                                                    <div class="logo-car">
+                                                        <img src="../assets/img/eg.svg" alt="">
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="lada_car">
+                                                    <div class="check-car">
+                                                        <input class="checkbox" type="checkbox" id="lada_car" name="check[]"> 
+                                                        <span>كوبية</span>
+                                                    </div>
+                                                    <div class="logo-car">
+                                                        <img src="../assets/img/eg.svg" alt="">
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="toyota_car">
+                                                    <div class="check-car">
+                                                        <input class="checkbox" id="toyota_car" type="checkbox" name="check[]"> 
+                                                        <span>كشف</span>
+                                                    </div>
+                                                    <div class="logo-car">
+                                                        <img src="../assets/img/eg.svg" alt="">
+                                                    </div>
+                                                </label>
+                                            </li>
+                                            <li>
+                                                <label for="bmw_car">
+                                                    <div class="check-car">
+                                                         <input class="checkbox" type="checkbox" id="bmw_car" name="check[]"> 
+                                                         <span> دفع رباعي</span>
+                                                    </div>
+                                                   <div class="logo-car">
+                                                    <img src="../assets/img/eg.svg" alt="">
+                                                   </div>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <label for="">السعر المطلوب</label>
+                                    <div class="price-car">
+                                        <input class="form-control" type="text" placeholder="من">
+                                        <input class="form-control" type="text" placeholder="إلي">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="select-details-car">
+                            <div class="item">
+                                <div class="box">
+                                    <label for="">نوع ناقل الحركه</label>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <label for="">نوع الوقود</label>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <label for="">مدة الايجار </label>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <label for="">اللون </label>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <label for=""> بلد المنشأ</label>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="box">
+                                    <label for="">  نوع الاعلان</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="actions-form">
+                            <div class="search-submit">
+                                <button class="btn btn-primary" type="submit">ابحث</button>
+                                <a href="#" class="" type="submit"><i class="fa-solid fa-heart"></i>  احفظ نتائج البحث </a>
+                            </div>
+                            <div class="more-data">
+                                <a href="#">
+                                    <i class="fa-solid fa-plus"></i> مزيد من الخيارات
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
